@@ -1,13 +1,4 @@
----
-title: "CODEBOOK"
-output: pdf_document
----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
 This is the codebook for newset.txt
 
 subject: the subject ID (1:30)
@@ -16,7 +7,9 @@ activity: The activity list (walking, walking_upsairs, walking downstairs, sitti
 Measurements (means):
 
 tBodyAccMeanX
+
 tBodyAccMeanY
+
 tBodyAccMeanZ
 tBodyAccStdX
 tBodyAccStdY
