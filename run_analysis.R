@@ -1,17 +1,17 @@
 library(data.table)
 
 ##Reading the data
-xtest <- read.table("C:\\Users\\Mostafa\\Documents\\data\\test\\X_test.txt", sep = "", header = FALSE)
-ytest <- read.table("C:\\Users\\Mostafa\\Documents\\data\\test\\Y_test.txt", sep = "", header = FALSE)
-subjecttest <- read.table("C:\\Users\\Mostafa\\Documents\\data\\test\\subject_test.txt", sep = "", header = FALSE)
+xtest <- read.table("X_test.txt", sep = "", header = FALSE)
+ytest <- read.table("Y_test.txt", sep = "", header = FALSE)
+subjecttest <- read.table("subject_test.txt", sep = "", header = FALSE)
 
-xtrain <- read.table("C:\\Users\\Mostafa\\Documents\\data\\train\\X_train.txt", sep = "", header = FALSE)
-ytrain <- read.table("C:\\Users\\Mostafa\\Documents\\data\\train\\Y_train.txt", sep = "", header = FALSE)
-subjecttrain <- read.table("C:\\Users\\Mostafa\\Documents\\data\\train\\subject_train.txt", sep = "", header = FALSE)
+xtrain <- read.table("X_train.txt", sep = "", header = FALSE)
+ytrain <- read.table("Y_train.txt", sep = "", header = FALSE)
+subjecttrain <- read.table("subject_train.txt", sep = "", header = FALSE)
 
-features <- read.table("C:\\Users\\Mostafa\\Documents\\data\\features.txt", sep = "", header = FALSE)
+features <- read.table("features.txt", sep = "", header = FALSE)
 
-activity_labels <- read.table("C:\\Users\\Mostafa\\Documents\\data\\activity_labels.txt", sep = "", header = FALSE)
+activity_labels <- read.table("activity_labels.txt", sep = "", header = FALSE)
 
 ##Mergind train and test data
 test <- cbind(subjecttest,ytest, xtest)
